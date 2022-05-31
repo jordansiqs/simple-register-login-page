@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Sacramento&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+/* HEADER LOGIN */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.register:link,
+.register:active {
+  width: 100px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 5px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 222, 235, 0.7),
+    rgba(214, 51, 108, 0.7)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: all 0.4s;
+}
+
+.register:hover,
+.register:visited {
+  background-image: linear-gradient(
+    45deg,
+    rgba(214, 51, 108, 0.7),
+    rgba(255, 222, 235, 0.7)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transform: translateY(-2px);
+}
+
+/* MAIN SECTION */
+
+.main-screen {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 222, 235, 0.7),
+    rgba(214, 51, 108, 0.7)
+  );
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORM */
+
+.form-box {
+  background-color: #fff;
+  width: 300px;
+
+  padding: 2rem;
+  /* border-radius: 10px; */
+  box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.crt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.crt-form input {
+  font-weight: 200;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* BUTTON */
+
+.btn {
+  font-weight: 600;
+  align-self: center;
+  width: 70%;
+  border: none;
+  padding: 5px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 222, 235, 0.7),
+    rgba(214, 51, 108, 0.7)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+
+  background-image: linear-gradient(
+    45deg,
+    rgba(214, 51, 108, 0.7),
+    rgba(255, 222, 235, 0.7)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
